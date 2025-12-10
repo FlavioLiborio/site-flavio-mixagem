@@ -10,5 +10,9 @@ export default defineConfig({
     cssCodeSplit: true, 
   },
   
+  experimental: {
+    cleanUrls: true,
+  },
+  
   plugins: [react()],
 })
