@@ -1,13 +1,13 @@
 {
-  "extends": "@tsconfig/node20/tsconfig.json",
   "compilerOptions": {
     "composite": true,
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+    "skipLibCheck": true,
     "module": "ESNext",
     "moduleResolution": "bundler",
     "strict": true,
-    "target": "ES2020", // Corrigido de ES2023 para ES2020
-    "skipLibCheck": true
+    "target": "ES2020",
+    "outDir": "./dist-types" // Adicionado para garantir a saida de tipos
   },
   "include": [
     "vite.config.ts"
